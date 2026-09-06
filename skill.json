@@ -1,0 +1,33 @@
+{
+  "name": "genpark-multihop-research-query-decomposer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Complex research prompt decomposer generating parallel sub-queries and synthesis dependency DAGs for deep factual coverage.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "service",
+  "tags": [
+    "deep-research",
+    "query-decomposition",
+    "perplexity",
+    "genspark",
+    "multi-hop-search"
+  ],
+  "inputs": {
+    "complex_inquiry": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "decomposition_id": {
+      "type": "string"
+    },
+    "sub_queries_generated": {
+      "type": "array"
+    },
+    "synthesis_dag_waves_count": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
